@@ -17,7 +17,7 @@ Token = None
 ID = None
 
 
-def my_log_config():
+# def my_log_config():
     # # 创建日志器,(设置日志器)
     # logger = logging.getLogger()
     # logger.setLevel(logging.INFO)
@@ -35,15 +35,15 @@ def my_log_config():
     # # 给日志器添加处理器
     # logger.addHandler(to1)
     # logger.addHandler(lht)
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
-    to1 = logging.StreamHandler()
-    filename = Get_Path+ "/report/log{}.log".format(time.strftime("%Y%m%d%H%M%S"))
-    to2 = logging.handlers.TimedRotatingFileHandler(filename=filename,when="M",interval=1,
-                                                    backupCount=2,encoding="utf-8")
-    fmt = "%(asctime)s %(levelname)s [%(name)s] [%(filename)s(%(funcName)s:%(lineno)d)] - %(message)s"
-    formatter = logging.Formatter(fmt=fmt)
-    to1.setFormatter(formatter)
-    to2.setFormatter(formatter)
-    logger.addHandler(to1)
-    logger.addHandler(to2)
+    # logger = logging.getLogger()
+    # logger.setLevel(logging.INFO)
+    # to1 = logging.StreamHandler()
+    # filename = Get_Path+ "/report/log{}.log".format(time.strftime("%Y%m%d%H%M%S"))
+    # to2 = logging.handlers.TimedRotatingFileHandler(filename=filename,when="M",interval=1,
+    #                                                 backupCount=2,encoding="utf-8")
+    # fmt = "%(asctime)s %(levelname)s [%(name)s] [%(filename)s(%(funcName)s:%(lineno)d)] - %(message)s"
+    # formatter = logging.Formatter(fmt=fmt)
+    # to1.setFormatter(formatter)
+    # to2.setFormatter(formatter)
+    # logger.addHandler(to1)
+    # logger.addHandler(to2)

@@ -1,3 +1,3 @@
-import app
-
-app.my_log_config()
+# import app
+# #
+# # app.my_log_config()
